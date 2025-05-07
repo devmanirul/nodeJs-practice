@@ -1,4 +1,3 @@
-//
 import dateTime from "./dateTime.js";
 
 import http from "http";
@@ -9,6 +8,7 @@ http
     req.writeHead(200, {
       "Content-Type": "text/html",
     });
+
     if (path === "/") {
       res.end("<h2>Server Homepage</h2>");
     } else if (path === "/about") {
